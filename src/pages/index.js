@@ -1,5 +1,5 @@
 import React from "react"
-import header from "../components/header"
+import Header from "../components/header"
 
 
 //scss
@@ -8,7 +8,7 @@ import "../styles/styles.scss"
 
 const IndexPage = () => (
   <div>
-    <header />
+    <Header />
   </div>
 )
 
