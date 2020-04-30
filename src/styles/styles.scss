@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;300;500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
 
 
@@ -8,14 +9,13 @@ $black: #2d2828;
 $lightGrey: rgba(0, 0, 0, 0.1);
 $darkGrey: rgba(0, 0, 0, 0.8);
 $primaryColor: #0027ec;
+$white: rgba(255, 255, 255, 0);
 
-// Transitions
-$transMed: 0.3s;
 
 // Typography
-$sansSerif: "Lato", sans-serif;
-$serif: "Playfair Display", serif;
-$normal: 400;
+$serif: "Playfair Display";
+$poppins: "Poppins";
+$normal: 200;
 $heavyWeight: 900;
 $regular: 400;
 $medium: 500;
@@ -36,18 +36,19 @@ h1 {
 
 
 body {
-    color: white;
-    font-family: $sansSerif;
+    color: $black;
+    font-family: $poppins;
+    font-weight: $normal;
     font-size: 14px;
     mix-blend-mode: difference;
-    overflow: hidden;
+    overflow-x: hidden;
+    margin: 0px;
 
 }
 
 
 .container {
-    margin: 0px;
-    width: 1080px;
+    width: 100%;
     min-width: 1080px;
     margin: 0 auto;
     @media (max-width: 1080px) {
@@ -68,12 +69,11 @@ body {
 //HEADER
 header {
     height: 80px;
-    margin: 0px; 
     width: 100%;
     position: absolute;
     z-index: 100;
     .inner-header{
-        margin: 0px;
+        margin: 0px 50px;
         display: flex;
         align-items: center;
         height: 80px;
@@ -95,7 +95,8 @@ header {
                     color: $black;
                     text-decoration: none;
                     font-family: $serif;
-                    font-size: 20px;
+                    font-size: 18px;
+                    letter-spacing: 2px;
                     font-weight: $medium;
                     margin: 0 20px;
                 }
@@ -104,3 +105,47 @@ header {
         }
     }
 }
+
+
+//abovefooter
+section2 {
+    .row{
+        width: 100%;
+        .column {
+            width: 50%;
+        }
+    }
+}
+
+
+
+
+//Footer
+footer {
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+            .inner-footer{
+                align-items: center;
+                margin: 0px 50px;
+                display: flex;
+                justify-content: space-between;
+                .copyright{
+                    align-items: center;
+            }
+
+        }
+}
+//cover
+.cover {
+    height: 90vh;
+    align-items: center;
+    display: flex;
+    .container{
+        max-width: 650px;
+        text-align: center;
+        align-items: center;
+    }
+}
+
