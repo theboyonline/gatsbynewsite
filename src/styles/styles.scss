@@ -36,9 +36,14 @@ h1 {
 
 
 body {
+    color: white;
     font-family: $sansSerif;
     font-size: 14px;
+    mix-blend-mode: difference;
+    overflow: hidden;
+
 }
+
 
 .container {
     margin: 0px;
@@ -76,6 +81,7 @@ header {
 
         .logo{
             a {
+                color: $black;
                 font-size: 25px;
                 font-weight: $medium;
                 text-decoration: none;
@@ -86,10 +92,11 @@ header {
         .navigation{
             nav{
                 a {
+                    color: $black;
                     text-decoration: none;
                     font-family: $serif;
-                    font-size: 18px;
-                    font-weight: $normal;
+                    font-size: 20px;
+                    font-weight: $medium;
                     margin: 0 20px;
                 }
             }
