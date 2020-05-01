@@ -10,7 +10,7 @@ $black: #2d2828;
 $lightGrey: rgba(0, 0, 0, 0.1);
 $darkGrey: rgba(0, 0, 0, 0.8);
 $primaryColor: #0027ec;
-$white: rgba(255, 255, 255, 0);
+$white: white;
 
 
 // Typography
@@ -49,11 +49,11 @@ body {
 
 
 .container {
-    min-width: 1080px;
-    margin: 0 25px;
-    @media (max-width: 1080px) {
-      width: 1080px;
-      min-width: 1080px;
+    min-width: 1200px;
+    margin: 0 75px;
+    @media (max-width: 1200px) {
+      width: 1200px;
+      min-width: 1200px;
     }
     @media (max-width: 1080px) {
       width: 976px;
@@ -73,7 +73,6 @@ header {
     position: absolute;
     z-index: 100;
     .inner-header{
-        margin: 0px 50px;
         display: flex;
         align-items: center;
         height: 80px;
@@ -109,25 +108,20 @@ header {
 
 //abovefooter
  letstalk {
-     height: 300px;
+     height: auto;
      background: #2D2828;
      display: flex;
      justify-content: center;
      color: white;
+     padding: 50px;
      .container{
-         display: flex;
-         max-width: 100%;
          justify-content: center;
-         align-items: center;
+         text-align: center;
           }
-            .row {
-                margin: 0px 50px;
-                display: flex;            }
-                .col {
-                    width: 50%;
-                    float: left;
-
-                }
+          .textcontent {
+              max-width: 650px;
+              margin:0 auto;
+          }
  }
 
 
@@ -145,7 +139,6 @@ footer {
         }
             .inner-footer{
                 align-items: center;
-                margin: 0px 50px;
                 display: flex;
                 justify-content: space-between;
                 .copyright{
@@ -161,9 +154,31 @@ footer {
     display: flex;
     justify-content: center;
     .container{
-        max-width: 650px;
         text-align: center;
         align-items: center;
+        .row {
+        }
     }
 }
 
+//bttons
+.btn {
+    font-family: $serif;
+    margin: 25px;
+    background: blue;
+    border: 0px;
+    padding: 15px 40px;
+    color: $white;
+    border: solid 0px 5px 5px 0px;
+    border-color: yellow;
+}
+
+
+//section2
+.section2 {
+    height: 500px;
+    .container{
+        width: 100%;
+    }
+
+}

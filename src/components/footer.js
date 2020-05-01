@@ -9,6 +9,7 @@ const Footer = () => (
         </div>
         <div className="footerlove">
           <h3> Build with Gatsby.js & &#10084; </h3>
+          
         </div>
       </div>
     </div>    
