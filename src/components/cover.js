@@ -1,11 +1,11 @@
 import React from "react"
 
-const cover = () => (
+const Cover = () => (
 <div className="cover">
     <div className="container">
         <div classname="row">
-            <h1 classname="covertitle">Hello I'm Gatsby, I load things faster;<br></br>
-                I can behave like a Human.
+            <h1 classname="covertitle">God's own country, or a heaven on earth. Place full of mountains, greenery and streams, 
+            Oh Kerala! God created you with utmost care
             </h1>
         </div>
     </div>
@@ -16,4 +16,4 @@ const cover = () => (
 
 )
 
-export default cover
+export default Cover

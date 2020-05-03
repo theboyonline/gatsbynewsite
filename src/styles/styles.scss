@@ -150,14 +150,14 @@ footer {
 //cover
 .cover {
     height: 90vh;
-    align-items: center;
     display: flex;
+    align-items: center;
     justify-content: center;
-    .container{
+    .container {
         text-align: center;
         align-items: center;
-        .row {
-        }
+        width: 550px;
+
     }
 }
 
@@ -176,9 +176,20 @@ footer {
 
 //section2
 .section2 {
-    height: 500px;
+    height: auto;
+    padding: 70px 0px;
+    background: rgb(238, 238, 238);
     .container{
         width: 100%;
+    }
+    .imagered {
+        width: 50%;
+        margin: 0px auto;
+        position: relative;
+    }
+    .image2 {
+        text-align: right;
+        width: 50%;
     }
 
 }
